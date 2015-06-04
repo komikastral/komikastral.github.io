@@ -18,6 +18,11 @@
 .form-group {
   padding-top: 2em;
 }
+
+.form-control{
+  margin-top:10px;
+  width: 100%;
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
