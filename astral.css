@@ -19,9 +19,9 @@
   padding-top: 2em;
 }
 
-.form-control{
-  margin-top:10px;
-  width: 100%;
+.mc_embed_signup input.email{
+  margin-top:10px !important;
+  width: 100% !important;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
