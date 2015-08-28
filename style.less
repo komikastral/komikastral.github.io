@@ -1,9 +1,16 @@
+@import "pingendo.less";
+@import "./bower_components/bootstrap/less/bootstrap.less";
+@import "./bower_components/font-awesome/less/font-awesome.less";
+#mc-embedded-subscribe{
+  margin-top: 1em;
+}
 #logline{
-  font-size: @font-size-base;
+  font-size: @font-size-h4;
   text-shadow: 1px 1px rgba(2, 2, 2, 0.56);
   .orbit{
   text-shadow: 2px 2px rgba(2, 2, 2, 0);
   }
+  margin-bottom:2em;
 }
 canvas {
   display: block;
@@ -16,10 +23,6 @@ strong{
 /* ---- particles.js container ---- */
 
 .animated {
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  -ms-animation-duration: 4s;
-  -o-animation-duration: 4s;
   animation-duration: 4s;
 }
 
@@ -32,29 +35,14 @@ strong{
 }
 
 .subox {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -ms-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s;
+  animation-delay: 6.7s;
 }
 
 #logline {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
+
   animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -ms-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s;
+  animation-delay: 5.3s;
 }
 
 #backgroundaudio {
@@ -62,19 +50,11 @@ strong{
   position: fixed;
   bottom: -65px;
   left: 5px;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
 #backgroundaudio:hover {
   bottom: 0;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
@@ -109,7 +89,6 @@ strong{
 }
 
 .orbit {
-  // background: red;
   padding: 0 13px;
   color: rgba(255, 255, 255, 0);
   background-image: url('orbit.png');
@@ -132,7 +111,7 @@ strong{
   text-transform: uppercase;
   letter-spacing: 1.2px;
   .big {
-    font-size: @font-size-h1;
+    font-size: @font-size-h3;
   }
 }
 
@@ -165,7 +144,9 @@ strong{
     }
   }
   .subox {
-    padding: 0 1em;
+    padding: 1em;
+    margin: 0 4em;
+    background-color: rgba(0, 0, 0, 0.5);;
   }
 }
 
@@ -945,62 +926,11 @@ monospace;
 @hr-border : @gray-lighter;
 // Pingendo variables
 @section-spacing : 35px;
-// Core variables and mixins
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/mixins.less";
-// Reset and dependencies
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/normalize.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/print.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/glyphicons.less";
-// Core CSS
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/scaffolding.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/type.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/code.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/grid.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/tables.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/forms.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/buttons.less";
-// Components
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/component-animations.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/dropdowns.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/button-groups.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/input-groups.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/navs.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/navbar.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/breadcrumbs.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/pagination.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/pager.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/labels.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/badges.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/jumbotron.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/thumbnails.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/alerts.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/progress-bars.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/media.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/list-group.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/panels.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/responsive-embed.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/wells.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/close.less";
-// Components w/ JavaScript
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/modals.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/tooltip.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/popovers.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/carousel.less";
-// Utility classes
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/utilities.less";
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/responsive-utilities.less";
-@import "https://raw.githubusercontent.com/Pingendo/pingendo-bootstrap/gh-pages/less/pingendo-custom.less";
+
+
 
 /* PINGENDO COMMENT DO NOT REMOVE */
 
 .socmed-row {
   margin: 2em 0 0 0;
-}
-
-.black {}
-
-.logo {}
-
-.padded {
-  padding: 2em;
 }
